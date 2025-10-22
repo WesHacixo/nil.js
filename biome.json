@@ -1,26 +1,24 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": ["../biome.json"],
-  "files": {
-    "include": ["src/**", "test/**", "rollup/**"]
-  },
-  "linter": {
-    "rules": {
-      "style": {
-        "useNamingConvention": {
-          "level": "warn",
-          "options": {
-            "strictCase": false,
-            "requireAscii": true,
-            "enumMemberCase": "PascalCase",
-            "conventions": [
-              {
-                "formats": ["camelCase", "PascalCase", "CONSTANT_CASE"]
-              }
-            ]
-          }
-        }
-      }
-    }
-  }
+	"$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+	"files": {
+		"includes": ["**/src/**", "**/test/**", "**/rollup/**"]
+	},
+	"linter": {
+		"rules": {
+			"style": {
+				"useNamingConvention": {
+					"level": "warn",
+					"options": {
+						"strictCase": false,
+						"requireAscii": true,
+						"conventions": [
+							{
+								"formats": ["camelCase", "PascalCase", "CONSTANT_CASE"]
+							}
+						]
+					}
+				}
+			}
+		}
+	}
 }

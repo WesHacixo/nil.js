@@ -41,6 +41,8 @@
 - [Installation](#installation)
 - [Getting started](#getting-started)
 - [Usage](#usage)
+- [📚 Documentation](#documentation)
+- [🔒 Security](#security)
 - [License](#license)
 
 ### Installation
@@ -205,6 +207,40 @@ await waitTillCompleted(client, sendHash);
 ```
 
 =nil; also supports token bouncing. If a message carries custom tokens, and it is unsuccesful, the funds will be returned to the address specified in the `bounceTo` parameter when sending the message.
+
+## 📚 Documentation
+
+Comprehensive documentation is available:
+
+- **[ANALYSIS_SUMMARY.md](ANALYSIS_SUMMARY.md)** - Executive summary and quick overview
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Complete technical architecture and implementation details
+- **[SECURITY.md](SECURITY.md)** - Security policy, best practices, and guidelines
+- **[SECURITY_ANALYSIS.md](SECURITY_ANALYSIS.md)** - Detailed security audit findings
+- **[QUICK_FIX_GUIDE.md](QUICK_FIX_GUIDE.md)** - Step-by-step guide to fix critical vulnerabilities
+
+### Quick Links
+
+- 🏗️ **Architecture**: Learn about the system design and components
+- 🔒 **Security**: Best practices for secure implementation
+- 🚀 **Quick Start**: Getting started examples above
+- 🐛 **Troubleshooting**: See QUICK_FIX_GUIDE.md
+
+## 🔒 Security
+
+**⚠️ IMPORTANT**: Before using in production, please:
+
+1. Read [SECURITY.md](SECURITY.md) for security best practices
+2. Review [QUICK_FIX_GUIDE.md](QUICK_FIX_GUIDE.md) for critical dependency updates
+3. Never hardcode private keys in your source code
+4. Always use HTTPS endpoints for RPC communication
+
+### Security Status
+
+- **Overall Security Score**: 7.5/10
+- **Code Security**: ✅ Strong cryptographic implementation
+- **Dependencies**: ⚠️ Requires immediate updates (see QUICK_FIX_GUIDE.md)
+
+For vulnerability reporting, see [SECURITY.md](SECURITY.md).
 
 ## Licence
 
